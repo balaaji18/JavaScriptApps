@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup Page</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        h2 {
+            color: red;
+            text-align: center;
+        }
+
+        .form-box {
+            width: 700px;
+            margin: auto;
+            border: 2px solid black;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            border-bottom: 1px solid black;
+            align-items: center;
+        }
+
+        .label {
+            border-right: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .field {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        .options {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .buttons {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .buttons input {
+            padding: 6px 20px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Please signup here!!!</h2>
+
+    <form onsubmit="return validation()">
+        <div class="form-box">
+
+            <div class="row">
+                <div class="label">Enter UserName:</div>
+                <div class="field">
+                    <input type="text" id="username">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Enter Password:</div>
+                <div class="field">
+                    <input type="password" id="password">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Confirm Password:</div>
+                <div class="field">
+                    <input type="password" id="confirm">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Select Gender:</div>
+                <div class="field options">
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Enter Mobile Number:</div>
+                <div class="field">
+                    <input type="text" id="mobile">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Enter DOB:</div>
+                <div class="field">
+                    <input type="date" id="dob">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Enter Address:</div>
+                <div class="field">
+                    <textarea id="address"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Select Qualification:</div>
+                <div class="field">
+                    <select id="qualification">
+                        <option value="">Select</option>
+                        <option>B.Tech</option>
+                        <option>M.Tech</option>
+                        <option>MCA</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Choose your Skills:</div>
+                <div class="field">
+                    <select multiple size="4" id="skills">
+                        <option>Java</option>
+                        <option>HTML5</option>
+                        <option>CSS3</option>
+                        <option>JavaScript</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Preferred Shift:</div>
+                <div class="field options">
+                    <label><input type="checkbox" name="shift"> Day Shift</label>
+                    <label><input type="checkbox" name="shift"> Night Shift</label>
+                    <label><input type="checkbox" name="shift"> Both</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Upload Resume:</div>
+                <div class="field">
+                    <input type="file" id="resume">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </div>
+
+        </div>
+    </form>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>

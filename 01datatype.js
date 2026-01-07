@@ -1,0 +1,23 @@
+var empid=2001;
+console.log(typeof(empid));
+var esalary=49000.99;
+console.log(typeof(esalary));
+var ename="balaji";
+console.log(typeof("ename"));
+var pemo=false;
+console.log(typeof(pemo));
+var pf=null;
+console.log(typeof(pf));
+var string=["hr,develpor"];
+console.log(typeof(string));
+var info={cid:1001,cname:"balu",cadderess:"tenali"};
+console.log(typeof(info));
+//ES-6 new datatypes
+var tcsturnover=BigInt(2345678915645542455);
+console.log(typeof(tcsturnover));
+var pname="realme";
+var pname1="realme";
+console.log(typeof(pname,pname1));
+var pname = "realme";
+var pname1 = "realme";
+console.log(pname==pname1);
